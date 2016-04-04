@@ -1,9 +1,14 @@
 import time
+name = "JoeBob"
+
 def compare(*options):
-	user = input(':')
+	user = input(name+':')
 	if(user in options):
 		return user
 	return False
+def say(*words):
+	print(words)
+	print("...")
 print("""\n\n\nWelcome to my game, you poor sod. You must have known going in
 to this that I have no writing skills, so you have brought this upon
 yourself. I guess I'll have to do something interesting to make up for
@@ -18,6 +23,14 @@ time.sleep(0.5)
 print("\nIf you want to start a new game, type in \'new\' and press that enter key")
 while(not compare("new")):
 	print("""Come on, I know you can do it""")
+print("""Nice job. Have an achievement. I'll save it somewhere and come up with a whitty name
+for it later.\n""")
+time.sleep(3)
+print("""Now, I just have one question before we start. What's your name?""")
+name = input()
+print("Ok, "+name+" strap in that seat belt and get ready!")
+time.sleep(2)
+#print("""*
 print("""\n\n\nNananananananananana, intro song!\n""")
 time.sleep(2)
 print("Cut to huge space ships\n")
