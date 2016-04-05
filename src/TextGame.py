@@ -2,7 +2,7 @@ import time
 name = "______"
 
 def compare(*options):
-	user = input(name+':')
+	user = input(">"+name+':')
 	if(user in options):
 		return user
 	return False
@@ -28,7 +28,7 @@ say("""Nice job. Have an achievement. I'll save it somewhere and come up with a 
 for it later.""")
 time.sleep(3)
 say("""Now, I just have one question before we start. What's your name?""")
-name = input(name+":")
+name = input(">"+name+":")
 say("Ok, "+name+", strap in that seat belt and get ready!")
 time.sleep(5)
 say("***COUGH***",0.5)
